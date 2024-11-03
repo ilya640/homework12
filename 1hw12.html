@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: aqua
+        }
+        .block{
+            height: 400px;
+            width: 400px;
+            margin: 50px auto;
+            background-color: yellow;         
+        }
+        @media (min-width: 1280px){
+            .block{
+
+            }
+        } 
+        @media (max-width: 1280px){
+            .block{
+                background-color: red; 
+            }
+        } 
+        @media (max-width: 1024px){
+            .block{
+                background-color: red; 
+                border-radius: 30px;
+            }
+        } 
+        @media (max-width: 768px){
+            .block{
+                background-color: yellow; 
+                border-radius: 30px;
+            }
+        } 
+        @media (max-width: 640px){
+            .block{
+                background-color: yellow; 
+                border-radius: 30px;
+                border: solid 3px red;
+            }
+        } 
+        @media (max-width: 480px){
+            .block{
+                background-color: yellow; 
+                border-radius: 50%;
+                border: solid 3px red;
+            }
+        } 
+        @media (max-width: 320px){
+            .block{
+                background-color: yellow; 
+               width: 100%;
+               margin: 0;
+               padding: 0;
+               border: none;
+               border-radius: 0;
+            }
+            body,html{
+                margin: 0;
+                padding: 0;
+            }
+        } 
+    </style>
+</head>
+<body>
+    <div class="block"></div>
+</body>
+</html>
