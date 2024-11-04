@@ -20,38 +20,45 @@
             display: block;
         }
         h1{
-            margin: 0;
-            height: 80px;
-            background-color: #C2C2C2;
+            margin: 0 auto;
+            min-height: 80px;
+            max-width: 980px;
             text-align: center;
             color: #282C2B;
             line-height: 80px;
             margin-bottom: 30px;
         }
+        .h1-block{
+            background-color: #C2C2C2;
+            min-height: 80px;
+        }
         .blocks{
+            
             margin: 50px 0;
-            height: 240px;
+            min-height: 240px;
             float: none;
             margin: 0 auto;
             width: 90%;
         }
       
         .block{
+           
             text-align: center;
             float: left;
-            margin: 10px 5px;
+            margin: 10px 0.5%;
             position: relative;
-            height: 220px;
-            width: 213px;
+            min-height: 220px;
+            width: 24.25%;
             background-color: #F8F8F8;
         }
         .block p{
             padding: 10px;
+            padding-bottom: 40px;
         }
         .button{
             position: absolute;
             bottom: 0;
-            width: 213px;
+            width: 100%;
             height: 40px;
             color: white;
             background-color: #68A4C4;
@@ -67,7 +74,9 @@
         footer span{
             display: block;
             color: white;
-            margin-left: 50px;
+            
+            width: 90%;
+            margin: 0 auto;
         }
         h3{
             text-align: center;
@@ -86,7 +95,7 @@
         .text{
 
             margin: 0 auto;
-            /* width: 1620px; */
+          
             width: 90%;
             clear: both;
         }
@@ -125,13 +134,18 @@
 </head>
 <body>
     <img src="./maket-desktop.jpg" alt="people">
-    <h1>Заголовок первого уровня</h1>
+    <div class="h1-block">
+    <h1>Заголовок первого уровня </h1>
+</div>
     <div class="content">
     <div class="blocks">
         <div class="block m-l">
             <h3>Новость 1</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis officiis</p>
+            <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis officiis</p>
+           
+            
             <div class="button">
+        
                 Читать далее
             </div>
         </div>
