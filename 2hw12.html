@@ -56,6 +56,7 @@
             padding-bottom: 40px;
         }
         .button{
+            display: block;
             position: absolute;
             bottom: 0;
             width: 100%;
@@ -64,18 +65,28 @@
             background-color: #68A4C4;
             line-height: 40px;
             text-align: center;
+            text-decoration: none;
         }
         footer{
             background-color: #68A4C4;
             height: 70px;
             bottom: 0;
             line-height: 70px;
+            width: 100%;
+           
         }
+        .footer-div{
+            width: 100%;
+            max-width: 980px;
+            margin: 0 auto;
+        }
+
         footer span{
             display: block;
             color: white;
-            
+            max-width: 980px;
             width: 90%;
+            text-align: left;
             margin: 0 auto;
         }
         h3{
@@ -84,12 +95,12 @@
         .content{
             width: 100%;
             max-width: 980px;
-        margin-bottom: 60px;
-        margin-left: auto;
-        margin-right: auto;
+            margin-bottom: 60px;
+            margin-left: auto;
+            margin-right: auto;
         }
         p{
-          
+  
             padding: 0;
         }
         .text{
@@ -125,9 +136,6 @@
                 width: 85%;
                 height: auto;
             }
-            .text{
-               
-            }
 
         }
     </style>
@@ -141,35 +149,32 @@
     <div class="blocks">
         <div class="block m-l">
             <h3>Новость 1</h3>
-            <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis officiis</p>
-           
-            
-            <div class="button">
-        
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis officiis</p>
+            <a class="button" href="#">
                 Читать далее
-            </div>
+            </a>
         </div>
 
         <div class="block ">
             <h3>Новость 1</h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis officiis</p>
-            <div class="button">
+            <a class="button" href="#">
                 Читать далее
-            </div>
+            </a>
         </div>
-        <div class="block">
+        <div class="block ">
             <h3>Новость 1</h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis officiis</p>
-            <div class="button">
+            <a class="button" href="#">
                 Читать далее
-            </div>
+            </a>
         </div>
         <div class="block m-r">
             <h3>Новость 1</h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis officiis</p>
-            <div class="button">
+            <a class="button" href="#">
                 Читать далее
-            </div>
+            </a>
         </div>
         
     </div>
@@ -189,7 +194,9 @@
 </div>
 </div>
     <footer>
+        <div class="footer-div">
 <span>&copy; Копирайт 2017</span>
+</div>
     </footer>
 </body>
 </html>
